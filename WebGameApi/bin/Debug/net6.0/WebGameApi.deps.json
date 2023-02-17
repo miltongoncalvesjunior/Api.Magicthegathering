@@ -1,0 +1,93 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebGameApi/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "X.PagedList.Mvc.Core": "8.4.5"
+        },
+        "runtime": {
+          "WebGameApi.dll": {}
+        }
+      },
+      "JetBrains.Annotations/2022.3.1": {
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "4242.42.42.42",
+            "fileVersion": "2022.3.1.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.27524"
+          }
+        }
+      },
+      "X.PagedList/8.4.5": {
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.dll": {
+            "assemblyVersion": "8.4.3.0",
+            "fileVersion": "8.4.3.0"
+          }
+        }
+      },
+      "X.PagedList.Mvc.Core/8.4.5": {
+        "dependencies": {
+          "X.PagedList": "8.4.5"
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.Mvc.Core.dll": {
+            "assemblyVersion": "8.4.3.0",
+            "fileVersion": "8.4.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebGameApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "path": "jetbrains.annotations/2022.3.1",
+      "hashPath": "jetbrains.annotations.2022.3.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
+    },
+    "X.PagedList/8.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J+k5n2eIQWsX7HLYkTFl9sv6eYFn6ypVBuBGgAGrors+Iuuv3UtTk7fVXOxx/8oMZkvTuJlzZ1ALiONtwnQQPQ==",
+      "path": "x.pagedlist/8.4.5",
+      "hashPath": "x.pagedlist.8.4.5.nupkg.sha512"
+    },
+    "X.PagedList.Mvc.Core/8.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xpqkOdvclpRRDQPCpqVwYO4SkFYx16Qs6Wj7wB+pYA6nTaqIkaawrS7TRCDx8KvlJZ16kollf3c9dFe70qiOXQ==",
+      "path": "x.pagedlist.mvc.core/8.4.5",
+      "hashPath": "x.pagedlist.mvc.core.8.4.5.nupkg.sha512"
+    }
+  }
+}

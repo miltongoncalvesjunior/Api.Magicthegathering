@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using WebGameApi.Models;
-using XPagedList;
+using X.PagedList;
 
 
 namespace WebGameApi.Controllers
