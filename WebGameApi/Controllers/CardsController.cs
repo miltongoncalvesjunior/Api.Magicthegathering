@@ -21,9 +21,42 @@ namespace WebGameApi.Controllers
             _httpClient.BaseAddress = new Uri(ENDPOINT);
 
         }
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+            MagicCardsViewModel cardList = null;
+            _cards = new List<Card>();
+            try
+            {
+
+
+
+                var response = await _httpClient.GetAsync(ENDPOINT);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    cardList = JsonConvert.DeserializeObject<MagicCardsViewModel>(content);
+
+                    foreach (var card in cardList.cards)
+                    {
+                        _cards.Add(card);
+                    }
+
+                }
+                else
+                {
+                    ModelState.AddModelError(null, "Erro ao processar o magic");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                string msg = ex.Message;
+
+                throw ex;
+            }
+            return View(cardList.cards);
         }
 
     }
