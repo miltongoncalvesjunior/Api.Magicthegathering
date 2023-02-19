@@ -1,4 +1,6 @@
-﻿@model IEnumerable<WebGameApi.Models.Card>
+﻿@model X.PagedList.IPagedList<WebGameApi.Models.Card>
+
+@using X.PagedList.Mvc.Core;
 
 @{
     ViewData["Title"] = "Index";
@@ -13,62 +15,47 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.name)
+                Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.manaCost)
+                Mana Cost       
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.cmc)
+                CMC
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.type)
+                Type
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.rarity)
+                Rarity
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.set)
+                Set
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.setName)
+                Set Name
+            </th>
+         
+            <th>
+                Number
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.text)
+                Power
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.artist)
+                Toughness
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.number)
+                Layout
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.power)
+                Multiverseid
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.toughness)
+                Image
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.layout)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.multiverseid)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.imageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.originalText)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.originalType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.flavor)
-            </th>
+          
+           
             <th></th>
         </tr>
     </thead>
@@ -96,12 +83,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.setName)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.text)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.artist)
-            </td>
+           
             <td>
                 @Html.DisplayFor(modelItem => item.number)
             </td>
@@ -118,26 +100,18 @@
                 @Html.DisplayFor(modelItem => item.multiverseid)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.imageUrl)
+                 <img src="@Html.DisplayFor(modelItem => item.imageUrl)" alt = "image"/>
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.originalText)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.originalType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.flavor)
-            </td>
+
+            
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.id }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new{page}))

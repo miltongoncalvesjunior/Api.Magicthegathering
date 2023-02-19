@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\decim\Desktop\Dev\WebGameApi\WebGameApi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/decim/Desktop/Dev/WebGameApi/WebGameApi/Views/Cards/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/decim/Desktop/Dev/WebGameApi/WebGameApi/Views/Cards/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

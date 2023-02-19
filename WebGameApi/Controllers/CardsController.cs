@@ -15,7 +15,7 @@ namespace WebGameApi.Controllers
     {
         private readonly string ENDPOINT = "https://api.magicthegathering.io/v1/cards";
         private readonly HttpClient _httpClient = null;
-        private List<Card> _cards = null;
+        private static List<Card> _cards = null;
 
         public CardsController()
         {
@@ -24,8 +24,14 @@ namespace WebGameApi.Controllers
 
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
+
+            var itemsByPage = 10;
+            var currentPage = page ?? 1;
+
+
+
             MagicCardsViewModel cardList = null;
             _cards = new List<Card>();
             try
@@ -58,8 +64,17 @@ namespace WebGameApi.Controllers
 
                 throw ex;
             }
-            return View(cardList.cards);
+            return View( await cardList.cards.ToPagedListAsync(currentPage, itemsByPage));
+            //return View(cardList.cards);
         }
+
+        [HttpGet]
+        public IActionResult Details(string id)
+        {
+            Card card = _cards.FirstOrDefault( c => c.id.Equals(id));
+            return View(card);
+        }
+
 
     }
 
