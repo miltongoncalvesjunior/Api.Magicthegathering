@@ -3,7 +3,7 @@
 Listagem Dos Dados,paginação e trazer a page detalhes .
 
 ENDPOINT : https://api.magicthegathering.io/v1/cards
-Ferramenta utilizada:
+Ferramenta utilizada.
 *******POSTMAN 
 *****DOTNET VERSÃO 6.0
 
