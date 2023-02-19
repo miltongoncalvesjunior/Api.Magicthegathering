@@ -8,7 +8,7 @@ using X.PagedList;
 
 namespace WebGameApi.Controllers
 {
-
+    
 
 
     public class CardsController : Controller
