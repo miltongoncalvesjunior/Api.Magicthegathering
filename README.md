@@ -8,6 +8,10 @@ Ferramenta utilizada.
 <p>***DOTNET VERSÃO 6.0</p>
 <p>***ASP.NETCORE web app (MVC) Model,view e controller .</p>
 <p>***Blazor</p>
+<p>Dependencias:
+X.PagedList;
+Newtonsoft.Json;
+</p>
 <p>***VISUAL STUDIO 2022</p>
 <p>Inicie um novo projeto no visual studio utilizando MVC </p>
 
