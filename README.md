@@ -25,5 +25,5 @@ ___________________________________________________<h2>README EM CONSTRUÇÃO</h
 * Crie uma estrutura inicial com ASP.NETCORE MVC
 * Crie Uma nova Class Na pasta Model Nesse projeto criamos a classe MagicCardsViewModel.cs Faça um parse criando as classes não foram utilizados todos arrays  que a api retorno como root entre outros.
 * Crie um controller em com estrutura MVC Controller Empty  = CardsController.cs utilize a instrução Using Newtonsoft.Json e X.PagedList faça o dowload dessas duas dependência 
- *Crie Um view em formato Razor View utilizando o template List retornando com o Objeto Cards .
+ <p>*Crie Um view em formato Razor View utilizando o template List retornando com o Objeto Cards .
  
