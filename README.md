@@ -23,8 +23,8 @@ ___________________________________________________<h2>README EM CONSTRUÇÃO</h
 * Entenda a estruta da API utilize o GET https://api.magicthegathering.io/v1/cards
 * JSON To C# Nesse caso utilizei o https://json2csharp.com/ 
 * Crie uma estrutura inicial com ASP.NETCORE MVC
-* Crie Uma nova Class Na pasta Model Nesse projeto criamos a classe MagicCardsViewModel.cs
-* 
+* Crie Uma nova Class Na pasta Model Nesse projeto criamos a classe MagicCardsViewModel.cs Faça um parse criando as classes não foram utilizados todos arrays  que a api retorno como root entre outros.
+* Crie um controller em com estrutura MVC Controller Empty  = CardsController.cs utilize a instrução Using Newtonsoft.Json e X.PagedList faça o dowload dessas duas dependência 
  
 
 
