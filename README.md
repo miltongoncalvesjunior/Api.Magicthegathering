@@ -13,12 +13,16 @@ X.PagedList;
 Newtonsoft.Json;
 </p>
 <p>***VISUAL STUDIO 2022</p>
-<p>Inicie um novo projeto no visual studio utilizando MVC </p>
+
 
 
 
 
 ___________________________________________________<h2>README EM CONSTRUÇÃO</h2>
 
+* Entenda a estruta da API utilize o GET https://api.magicthegathering.io/v1/cards
+* JSON To C# Nesse caso utilizei o https://json2csharp.com/ 
+* Crie uma estrutura inicial com ASP.NETCORE MVC
+* Crie as 
 
 
