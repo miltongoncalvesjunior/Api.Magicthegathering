@@ -8,7 +8,7 @@ Ferramenta utilizada.
 <p>***DOTNET VERSÃO 6.0</p>
 <p>***ASP.NETCORE web app (MVC) Model,view e controller .</p>
 <p>***Blazor</p>
-<p>Dependencias:--------------
+<p>Dependencias:-------------------
 X.PagedList;
 Newtonsoft.Json;
 </p>
