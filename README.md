@@ -27,3 +27,4 @@ ___________________________________________________<h2>README EM CONSTRUÇÃO</h
 * Crie um controller em com estrutura MVC Controller Empty  = CardsController.cs utilize a instrução Using Newtonsoft.Json e X.PagedList faça o dowload dessas duas dependência.
 * Crie Um view em formato Razor View utilizando o template List retornando com o Objeto Cards .
 * *Crie uma nova action Details .
+* Atualização
